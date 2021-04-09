@@ -1,0 +1,27 @@
+{
+  "name": "base-fook",
+  "version": "1.0.0",
+  "description": "social",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bspur11/base-fook.git"
+  },
+  "keywords": [
+    "brad"
+  ],
+  "author": "brad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bspur11/base-fook/issues"
+  },
+  "homepage": "https://github.com/bspur11/base-fook#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  }
+}
