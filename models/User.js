@@ -17,23 +17,21 @@ const userSchema = new Schema(
       unique: true,
       match: [/.+@.+\..+/]
     },
-    userThoughts: {
-      type: String,
-      required: true
-    },
-  
-    createdAt: {
-      type: Date,
-      default: Date.now,
-      get: createdAtVal => dateFormat(createdAtVal)
-    }
+    thoughts: [{ type: Schema.Types.ObjectId, ref: 'Thought' }],
+    friends: [{ type: Schema.Types.ObjectId, ref: 'User' }]
   },
+  
   {
     toJSON: {
-      getters: true
-    }
+      virtuals: true
+    },
+    id: false
   }
-)
+);
+
+userSchema.virtual('friendCount').get(function() {
+  return this.friends.length;
+});
 
 // create the User model using the userSchema
 const User = model('User', userSchema);
