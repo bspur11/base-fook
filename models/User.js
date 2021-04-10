@@ -7,14 +7,16 @@ const UserSchema = new Schema(
     userName: {
       type: String,
       required: true,
+      unique: true,
       trim: true
     },
     
-    userId: {
-      type: Schema.Types.ObjectId,
-      default: () => new Types.ObjectId()
+    email: {
+      type: String,
+      unique: true,
+      match: [/.+@.+\..+/]
     },
-    userBody: {
+    userThoughts: {
       type: String,
       required: true
     },
@@ -31,3 +33,9 @@ const UserSchema = new Schema(
     }
   }
 )
+
+// create the Pizza model using the PizzaSchema
+const User = model('Pizza', userSchema);
+
+// export the Pizza model
+module.exports = User;
