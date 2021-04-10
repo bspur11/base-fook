@@ -1,7 +1,7 @@
-const { Schema, model, Types } = require('mongoose');
+const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const UserSchema = new Schema(
+const userSchema = new Schema(
   {
     // set custom id to avoid confusion with parent comment _id
     userName: {
