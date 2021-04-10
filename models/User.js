@@ -13,6 +13,7 @@ const userSchema = new Schema(
     
     email: {
       type: String,
+      requiered: true,
       unique: true,
       match: [/.+@.+\..+/]
     },
@@ -34,8 +35,8 @@ const userSchema = new Schema(
   }
 )
 
-// create the Pizza model using the PizzaSchema
+// create the User model using the userSchema
 const User = model('User', userSchema);
 
-// export the Pizza model
+// export the User model
 module.exports = User;
