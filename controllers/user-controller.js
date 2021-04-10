@@ -68,6 +68,7 @@ deleteUser({ params }, res) {
     })
     .catch(err => res.status(400).json(err));
 }
+// Check for remove comments from friends arrays***
 
 };
 
