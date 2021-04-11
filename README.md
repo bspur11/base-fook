@@ -5,15 +5,14 @@
 
 # User Story
 
+ An API for a social netrwork that uses a NoSQL database. When the server is started the Mongoose models are synced to the MongoDB.
 
-### An API for a social netrwork that uses a NoSQL database. When the server is started the Mongoose models are synced to the MongoDB. 
 Api routes are opened in Insomnia Core for users and thoughts which are formated and displayed in Json.
 
 # Packages
 
 express
-moment
-mongoose
+Mongoose
 
 # Usage
 Make sure you have MongoDB installed on your machine (if you don't, follow the instructions on the MongoDB Website)
@@ -24,9 +23,9 @@ Use your browser or an app like Insomnia to test the REST API.
 
 # Models 
 
+Thought 
 User
-Thought
-Reaction (subdocument in Thought)
+Reaction(subdocument in Thought)
 
  # Endpoints
 ## User
