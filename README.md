@@ -7,7 +7,7 @@
 
  **An API** for a social netrwork that uses a NoSQL database. When the server is started the Mongoose models are synced to the MongoDB.
 
-**Api** routes are opened in Insomnia Core for users and thoughts which are formated and displayed in Json.
+**Api** routes are opened in Insomnia Core for users and thoughts and reactions to thoughts which are formated and displayed in Json.
 
 ## Packages
 - express
@@ -52,3 +52,10 @@
 
 **Brad Spurrell** 
 - https://bspur11.github.io/brad-port/
+
+
+## Links to Demo Videos
+
+ - https://drive.google.com/file/d/1hKni9GT_2XoWcbssj-xvjIJ5wdMC94oH/view 1 latest
+
+ - https://drive.google.com/file/d/1GsAFfF44WNyAC8Iauav4YxKArdMBcRf3/view
